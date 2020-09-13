@@ -2,8 +2,7 @@
 VERSION = 5
 PATCHLEVEL = 5
 SUBLEVEL = 0
-EXTRAVERSION =
-NAME = Kleptomaniac Octopus
+EXTRAVERSION = -cmsc421project0-jcruz5
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -1014,7 +1013,7 @@ export MODORDER := $(extmod-prefix)modules.order
 export MODULES_NSDEPS := $(extmod-prefix)modules.nsdeps
 
 ifeq ($(KBUILD_EXTMOD),)
-core-y		+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/
+core-y		+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ hello/
 
 vmlinux-dirs	:= $(patsubst %/,%,$(filter %/, $(init-y) $(init-m) \
 		     $(core-y) $(core-m) $(drivers-y) $(drivers-m) \
